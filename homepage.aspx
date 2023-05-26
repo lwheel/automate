@@ -50,11 +50,10 @@
         <br />
 
         <div class="intro">
-            The East African Mathematical Olympiad (EAMO) is the Championship Mathematics in East Africa Competition for High School students and is held annually in a different country. The first IMO was held in 2023 in __, with _ countries participating. The EAMO Board ensures that the competition takes place each year and that each host country observes the regulations and traditions of the EAMO.
-        </div>
+          The East African Mathematical Olympiad is an annual high school mathematics contest targeting the Eastern Africa countries. The East African mathematical community came to an understanding that a regional competition would be of crucial value in enhancing appreciation of mathematics as well as a great tool for preparing students for the international Mathematical Olympiad, and finally enabling young contestants to meet and share their passion for the subject.
 
         <br />
-
+        The goal is to inspire and encourage young mathematicians to pursue their passion, and to help them develop their critical thinking, problem-solving and teamwork skills. The Olympiad is designed to challenge students and push them to their limits, while also providing a fun and rewarding experience.
 
 
     </div>
