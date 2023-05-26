@@ -8,6 +8,20 @@
     body {
       background-color: #fbfbed; /* Replace with your desired color */
     }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .content {
+      flex: 1;
+    }
     .centered-heading {
       text-align: center;
     }
@@ -48,14 +62,15 @@
         <a id="ctl00_HyperLink_Results" href="results.aspx">Results</a> &bull;
         <a id="ctl00_HyperLink_Problems" href="problems.aspx">Problems</a> &bull;
         <a id="ctl00_HyperLink_Hall" href="hall.aspx">Hall of fame</a> &bull;
-        <a id="ctl00_HyperLink_Links" href="links.aspx">Links and Resources</a>-->
+        <a id="ctl00_HyperLink_Links" href="links.aspx">Links and Resources</a>
 	</div>
 </div>
 
 
 
     <div id="main">
-
+        <div class = "container">
+          <div class = "content">
 
         <br />
 
@@ -69,7 +84,8 @@
         <br />
 
     </div>
-
+  </div>
+</div>
 
 <footer>
   <b>E-mail:</b> 
