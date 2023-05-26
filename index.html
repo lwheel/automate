@@ -16,7 +16,8 @@
     .container {
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
+      min-height: 100%;
+      position: relative;
     }
 
     .content {
@@ -43,7 +44,9 @@
     footer {
       background-color:#fcfcd9;
       padding: 20px;
-      margin-top: auto;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
     }
   </style>
   </head>
@@ -83,6 +86,7 @@
 
     </div>
 </div>
+</div>
 
 <footer>
   <b>E-mail:</b> 
@@ -92,6 +96,5 @@
 <b>Webmaster:</b> 
 <a href="mailto:webmaster@imo-official.org">__</a>
 </footer>
-</div>
 </body>
 </html>
