@@ -1,147 +1,163 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" >
-<head><meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" /><link href="App_Themes/fav-logo.ico" rel="shortcut icon" type="image/x-icon" /><link href="App_Themes/design.css" rel="stylesheet" type="text/css" /><link href="App_Themes/index.css" rel="stylesheet" type="text/css" /><link href="App_Themes/print.css" rel="stylesheet" type="text/css" media="print" /><title>
-	East African Mathematical Olympiad
-</title>
-<style>
-  body {
-      /* Replace with your desired color */
-      font-size: 16px;
-      font-family: verdana, sans-serif;
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="App_Themes/fav-logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="App_Themes/design.css">
+  <link rel="stylesheet" href="App_Themes/index.css">
+  <link rel="stylesheet" href="App_Themes/print.css" media="print">
+  <title>East African Mathematical Olympiad</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;700&display=swap');
+
+    body {
+      font-family: "Merriweather", serif;
       background-color: #EDF5FF;
-      position: absolute;
+      margin: 0;
+      padding: 0;
       overflow: auto;
-      right: 0;
-      bottom: 2em;
-      left: 0em;
-      margin: 0;
-      padding: 0;
-      z-index: 3;
       text-align: center;
-  }
+    }
 
-  html,
-  body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-  }
-
-  .container {
+    .container {
       display: flex;
       flex-direction: column;
-      min-height: 80%;
-      position: relative;
-  }
+      min-height: 100vh;
+    }
 
-  .content {
+    .content {
       flex: 1;
-  }
+      padding: 2rem;
+    }
 
-  .centered-heading {
+    .centered-heading {
+      font-family: "Merriweather", serif;
+      margin: 0;
+      padding: 0;
+      overflow: auto;
       text-align: center;
-      font-size: 30px;
-  }
+      font-weight: 700;
+      font-size: 50px;
+  
+    }
 
-  .centered-image {
+    .centered-image {
       display: flex;
       justify-content: center;
-  }
+      margin-top: 2rem;
+    }
 
-  #header {
+    #header {
       background-color: #D3E3F7;
-      padding:30px;
-      font-size: 30px;
-  }
+      padding: 2rem;
+    }
 
-  #menu {
+    #menu {
       display: flex;
       justify-content: center;
-      white-space: nowrap;
-      height: 1.4em;
-      padding: 0.4em 0 0.2em 0;
-      text-align: center;
+      padding: 0.4em 0;
       color: #0F3678;
-      font-size: 18px;
-  }
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
 
-  #menu a {
-      margin: 0 15px; /* Adjust the margin value to increase or decrease the space between links */
-  }
+    #menu a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #0F3678;
+      transition: color 0.3s ease-in-out;
+    }
 
-  footer {
-      border-top: 1px dashed #BEB761;
-      border-bottom: 1px solid #D3E3F7;
+    #menu a:hover {
+      color: #4B86DB;
+    }
+
+    footer {
       background-color: #D3E3F7;
       text-align: center;
       padding: 0.2em;
       font-size: 14px;
       line-height: 2em;
-      white-space: nowrap;
       position: fixed;
-      overflow: hidden;
-      display: block;
       bottom: 0;
       left: 0;
       width: 100%;
       height: 5em;
       margin: 0;
       z-index: 5;
-  }
-  header, h1 {
-    font-size: 50px;
-  }
-</style>
+    }
 
-  </head>
+    header,
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+      color: #0F3678;
+      margin-bottom: 2rem;
+    }
+
+    .intro {
+      margin-top: 2rem;
+      text-align: left;
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+      .centered-heading {
+        font-size: 1.8rem;
+      }
+
+      header,
+      h1 {
+        font-size: 50px;
+      }
+    }
+  </style>
+</head>
+
 <body>
-<div id="header">
+  <div id="header">
     <div id="h1">
-        <h1 class = "centered-heading"><a">East African Mathematical Olympiad</a></h1>
+      <h1 class="centered-heading">
+        <a href="#">East African Mathematical Olympiad</a>
+      </h1>
     </div>
-    
-    <div id="sub">   
-        <span class="centered-image"><a href="index.html"><img src="https://lwheel.github.io/MathOlympiad/EAMO.png" alt="EAMO" style="width: 100px; height: 77px;"/></a></span>
-
+    <div id="sub">
+      <div class="centered-image">
+        <a href="index.html">
+          <img src="https://lwheel.github.io/MathOlympiad/EAMO.png" alt="EAMO" style="width: 100px; height: 77px;">
+        </a>
+      </div>
     </div>
+    <div id="menu">
+      <a href="about.html">About EAMO</a> &bull;
+      <a href="countries.html">Countries</a> &bull;
+      <a href="results.html">Results</a> &bull;
+      <a href="problems.html">Problems</a> &bull;
+      <a href="links.html">Links and Resources</a>
+    </div>
+  </div>
 
-	<div id="menu">
-               <a id="ctl00_HyperLink_Countries" href="about.html">About EAMO</a> &bull;
-        <a id="ctl00_HyperLink_Countries" href="countries.html">Countries</a> &bull;
-        <a id="ctl00_HyperLink_Results" href="results.html">Results</a> &bull;
-        <a id="ctl00_HyperLink_Problems" href="problems.html">Problems</a> &bull;
-        
-        <a id="ctl00_HyperLink_Links" href="links.html">Links and Resources</a>
-	</div>
-</div>
-
-
-<div class = "container">
+  <div class="container">
     <div id="main">
-          <div class = "content">
-
-        <br />
-
+      <div class="content">
         <div class="intro">
-         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The East African Mathematical Olympiad is an annual high school mathematics contest targeting the countries of Eastern Africa. The East African mathematical community came to an understanding that a regional competition would be of crucial value in enhancing appreciation of mathematics as well as a great tool for preparing students for the international Mathematical Olympiad, and finally enabling young contestants to meet and share their passion for the subject.
-
-        <br>
-                <br>
-                <br>
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The goal is to inspire and encourage young mathematicians to pursue their passion, and to help them develop their critical thinking, problem-solving and teamwork skills. The Olympiad is designed to challenge students and push them to their limits, while also providing a fun and rewarding experience.
-        <br />
-
+          <p>
+            The East African Mathematical Olympiad is an annual high school mathematics contest targeting the countries of Eastern Africa. The East African mathematical community came to an understanding that a regional competition would be of crucial value in enhancing appreciation of mathematics as well as a great tool for preparing students for the international Mathematical Olympiad, and finally enabling young contestants to meet and share their passion for the subject.
+          </p>
+          <p>
+            The goal is to inspire and encourage young mathematicians to pursue their passion and to help them develop their critical thinking, problem-solving, and teamwork skills. The Olympiad is designed to challenge students and push them to their limits while also providing a fun and rewarding experience.
+          </p>
+        </div>
+      </div>
     </div>
-</div>
-</div>
+  </div>
 
-<footer>
-  <b>E-mail:</b> 
-<a href="mailto:">__</a> 
-&nbsp; &nbsp;
-<b>Webmaster:</b> 
-<a href="mailto:ea@globtalent.org">ea@globtalent.org</a>
-</footer>
+  <footer>
+    <b>E-mail:</b>
+    <a href="mailto:">__</a>
+    &nbsp; &nbsp;
+    <b>Webmaster:</b>
+    <a href="mailto:ea@globtalent.org">ea@globtalent.org</a>
+  </footer>
 </body>
 </html>
