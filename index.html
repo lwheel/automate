@@ -39,6 +39,7 @@
       text-align: center;
       font-weight: 700;
       font-size: 50px;
+  
     }
 
     .centered-image {
@@ -53,14 +54,10 @@
     }
 
     .top-left-corner {
-      position: absolute;
-      top: 0px;
-      left: 10px;
-    }
-
-    .menu-toggle {
-      display: none;
-    }
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
 
     #menu {
       font-family: "IBM Plex Sans";
@@ -107,13 +104,11 @@
       color: #000000;
       margin-bottom: 2rem;
     }
-
-    #h1 a {
+    #h1 a{
       text-decoration: none;
       color: #000000;
       transition: color 0.3s ease-in-out;
     }
-
     #h1 a:hover {
       color: #4B86DB;
     }
@@ -132,20 +127,6 @@
       header,
       h1 {
         font-size: 50px;
-      }
-
-      .menu-toggle {
-        display: block;
-        margin: 1rem;
-        cursor: pointer;
-      }
-
-      #menu {
-        display: none;
-      }
-
-      #menu.open {
-        display: flex;
       }
     }
   </style>
@@ -166,9 +147,6 @@
         <a href="#">East African Mathematical Olympiad</a>
       </h1>
     </div>
-
-    <div class="menu-toggle">&#9776;</div>
-
     <div id="menu">
       <a href="about.html">About EAMO</a> &bull;
       <a href="countries.html">Countries</a> &bull;
@@ -200,14 +178,5 @@
     <b>Webmaster:</b>
     <a href="mailto:ea@globtalent.org">ea@globtalent.org</a>
   </footer>
-
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('#menu');
-
-    menuToggle.addEventListener('click', () => {
-      menu.classList.toggle('open');
-    });
-  </script>
 </body>
 </html>
