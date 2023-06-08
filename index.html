@@ -1,44 +1,210 @@
-<style>
-  footer {
-    background-image: url('https://lwheel.github.io/MathOlympiad/repeat1.png');
-    background-size: contain;
-    background-repeat: repeat;
-    color: rgb(0, 0, 0);
-    text-align: left;
-    font-size: 14px;
-    line-height: 1em;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 6em;
-    margin: 0;
-    z-index: 5;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-  }
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="App_Themes/fav-logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="App_Themes/design.css">
+  <link rel="stylesheet" href="App_Themes/index.css">
+  <link rel="stylesheet" href="App_Themes/print.css" media="print">
+  <title>East African Mathematical Olympiad</title>
+  <style>
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-  footer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
-    z-index: -1;
-  }
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+      overflow: auto;
+      text-align: center;
+    }
 
-  footer b {
-    font-size: 8px;
-    margin-top: 3em;
-  }
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-  footer a {
-    color: rgb(0, 0, 0);
-    font-size: 8px;
-  }
-</style>
+    .content {
+      flex: 1;
+      padding: 2rem;
+    }
+
+    .centered-heading {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: auto;
+      text-align: center;
+      font-weight: 700;
+      font-size: 50px;
+  
+    }
+
+    .centered-image {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    #header {
+      background-color: #ffffff;
+      padding: 2rem;
+    }
+
+    .top-left-corner {
+      position: absolute;
+      top: 14px;
+      left: 12px;
+    }
+
+    #menu {
+      font-family: "Poppins", "sans-serif";
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      color: #000000;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    #menu a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #000000;
+      transition: color 0.3s ease-in-out;
+    }
+
+    #menu a:hover {
+      color: #4B86DB;
+    }
+    footer {
+      background-image: url('https://lwheel.github.io/MathOlympiad/repeat1.png');
+      background-size: contain;
+      background-repeat: repeat;
+      color: rgb(0, 0, 0);
+      text-align: left;
+      font-size: 14px;
+      line-height: 1em;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 6em;
+      margin: 0;
+      z-index: 5;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+
+    footer::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.2);
+      z-index: -1;
+    }
+
+    footer b {
+      font-size: 8px;
+      margin-top: 3em;
+    }
+
+    footer a {
+      color: rgb(0, 0, 0);
+      font-size: 8px;
+    }
+
+    header,
+    h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      color: #000000;
+      margin-bottom: 2rem;
+    }
+    #h1 a{
+      text-decoration: none;
+      color: #000000;
+      transition: color 0.3s ease-in-out;
+    }
+    #h1 a:hover {
+      color: #4B86DB;
+    }
+
+    .intro {
+      text-align: left;
+      margin-left: 1000 px;
+      margin-right: 1000 px;
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 768px) {
+      .centered-heading {
+        font-size: 1.8rem;
+      }
+
+      header,
+      h1 {
+        font-size: 50px;
+      }
+    }
+  </style>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<body>
+  <div id="header">
+    <div id="sub">
+      <div class="centered-image top-left-corner">
+        <a href="index.html">
+          <img src="https://lwheel.github.io/MathOlympiad/EAMO.png" alt="EAMO" style="width: 100px; height: 77px;">
+        </a>
+      </div>
+    </div>
+
+    <div id="h1">
+      <h1 class="centered-heading">
+        <a href="#">East African Mathematical Olympiad</a>
+      </h1>
+    </div>
+    <div id="menu">
+      <a href="about.html">About EAMO</a> &bull;
+      <a href="countries.html">Countries</a> &bull;
+      <a href="results.html">Results</a> &bull;
+      <a href="problems.html">Problems</a> &bull;
+      <a href="links.html">Links and Resources</a>
+    </div>
+  </div>
+  <div class="container">
+    <div id="main">
+      <div class="content">
+        <div class="intro" style="margin-left: 50px; margin-right: 50px;">
+          <p>
+            The East African Mathematical Olympiad is an annual high school mathematics contest targeting the countries of Eastern Africa. The East African mathematical community came to an understanding that a regional competition would be of crucial value in enhancing appreciation of mathematics as well as a great tool for preparing students for the international Mathematical Olympiad, and finally enabling young contestants to meet and share their passion for the subject.
+          </p>
+          <p>
+            The goal is to inspire and encourage young mathematicians to pursue their passion and to help them develop their critical thinking, problem-solving, and teamwork skills. The Olympiad is designed to challenge students and push them to their limits while also providing a fun and rewarding experience.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <b>E-mail:</b>
+    <a href="mailto:">__</a>
+    &nbsp; &nbsp;
+    <br>  
+    <b>Webmaster:</b>
+    <a href="mailto:ea@globtalent.org">ea@globtalent.org</a>
+  </footer>
+</body>
+</html>
