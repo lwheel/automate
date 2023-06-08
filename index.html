@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="App_Themes/print.css" media="print">
   <title>East African Mathematical Olympiad</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Chakra Petch:wght@700;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Chakra Petch:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=IBM Plex Mono:wght@700;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=IBM Plex Sans:wght@400;700&display=swap');
 
     body {
-      font-family: "Chakra Petch";
+      font-family: "IBM Plex Sans";
       background-color: #f3f8ff;
       margin: 0;
       padding: 0;
@@ -22,6 +22,7 @@
 
     .container {
       display: flex;
+      flex-direction: column;
       min-height: 100vh;
     }
 
@@ -31,58 +32,46 @@
     }
 
     .centered-heading {
-      font-family: "Chakra Petch";
+      font-family: "IBM Plex Mono";
       margin: 0;
       padding: 0;
       overflow: auto;
       text-align: center;
       font-weight: 700;
       font-size: 50px;
+  
     }
 
     .centered-image {
       display: flex;
-      justify-content: flex-start; /* Align the image to the left */
+      justify-content: center;
       margin-top: 1rem;
-      margin-bottom: 2rem;
-      margin-left: 0; 
-    }
-
-    .centered-image img {
-      display: inline-block;
-      vertical-align: middle;
     }
 
     #header {
       background-color: #c8d1db;
       padding: 2rem;
-      position: relative;
-      z-index: 1;
     }
 
     .top-left-corner {
-      margin-top: 10px;
-      margin-left: 0px;
-    }
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
 
     #menu {
-      font-family: "Chakra Petch";
+      font-family: "IBM Plex Sans";
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       margin-top: 1rem;
-      margin-left: 0px;
-      padding: 0;
+      padding: 0.4em 0;
       color: #000000;
       font-size: 1.2rem;
       font-weight: 700;
-      text-align: left; /* Align the text to the left */
     }
 
-
     #menu a {
-      margin: 0.8rem 0;
-      margin-left: 0 px;
-      justify-content: left;
+      margin: 0 1rem;
       text-decoration: none;
       color: #000000;
       transition: color 0.3s ease-in-out;
@@ -109,19 +98,17 @@
 
     header,
     h1 {
-      font-family: "Chakra Petch";
+      font-family: "IBM Plex Sans";
       font-size: 30px;
       font-weight: 700;
       color: #000000;
       margin-bottom: 2rem;
     }
-
     #h1 a{
       text-decoration: none;
       color: #000000;
       transition: color 0.3s ease-in-out;
     }
-
     #h1 a:hover {
       color: #4B86DB;
     }
@@ -146,36 +133,32 @@
 </head>
 
 <body>
-  <div class="container">
-    <div id="header">
+  <div id="header">
+    <div id="sub">
       <div class="centered-image top-left-corner">
         <a href="index.html">
           <img src="https://lwheel.github.io/MathOlympiad/EAMO.png" alt="EAMO" style="width: 100px; height: 77px;">
         </a>
       </div>
-      <div id="menu">
-        <a href="about.html">About EAMO</a>
-        <a href="countries.html">Countries</a>
-        <a href="results.html">Results</a>
-        <a href="problems.html">Problems</a>
-        <a href="links.html">Links and Resources</a>
-      </div>
-      <div style="position: absolute; bottom: 5px; left: 5px; text-align: left; margin: 5px;">
-      <b>E-mail:</b>
-      <a href="mailto:">__</a>
-      &nbsp; &nbsp;
-      <b>Webmaster:</b>
-      <a href="mailto:ea@globtalent.org">ea@globtalent.org</a>
-    </div>
     </div>
 
+    <div id="h1">
+      <h1 class="centered-heading">
+        <a href="#">East African Mathematical Olympiad</a>
+      </h1>
+    </div>
+    <div id="menu">
+      <a href="about.html">About EAMO</a> &bull;
+      <a href="countries.html">Countries</a> &bull;
+      <a href="results.html">Results</a> &bull;
+      <a href="problems.html">Problems</a> &bull;
+      <a href="links.html">Links and Resources</a>
+    </div>
+  </div>
+
+  <div class="container">
     <div id="main">
       <div class="content">
-        <div id="h1">
-          <h1 class="centered-heading">
-            <a href="#">East African Mathematical Olympiad</a>
-          </h1>
-        </div>
         <div class="intro">
           <p>
             The East African Mathematical Olympiad is an annual high school mathematics contest targeting the countries of Eastern Africa. The East African mathematical community came to an understanding that a regional competition would be of crucial value in enhancing appreciation of mathematics as well as a great tool for preparing students for the international Mathematical Olympiad, and finally enabling young contestants to meet and share their passion for the subject.
@@ -188,5 +171,12 @@
     </div>
   </div>
 
+  <footer>
+    <b>E-mail:</b>
+    <a href="mailto:">__</a>
+    &nbsp; &nbsp;
+    <b>Webmaster:</b>
+    <a href="mailto:ea@globtalent.org">ea@globtalent.org</a>
+  </footer>
 </body>
 </html>
