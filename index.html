@@ -55,24 +55,26 @@
     }
 
     .top-left-corner {
-  position: absolute;
-  top: 0px;
-  left: 10px;
-}
+      position: absolute;
+      top: 0px;
+      left: 10px;
+    }
 
     #menu {
       font-family: "IBM Plex Sans";
       display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
       margin-top: 1rem;
-      padding: 0.4em 0;
+      padding: 0;
       color: #000000;
       font-size: 1.2rem;
       font-weight: 700;
     }
 
     #menu a {
-      margin: 0 1rem;
+      margin: 0.5rem 0;
       text-decoration: none;
       color: #000000;
       transition: color 0.3s ease-in-out;
@@ -149,10 +151,10 @@
       </h1>
     </div>
     <div id="menu">
-      <a href="about.html">About EAMO</a> &bull;
-      <a href="countries.html">Countries</a> &bull;
-      <a href="results.html">Results</a> &bull;
-      <a href="problems.html">Problems</a> &bull;
+      <a href="about.html">About EAMO</a>
+      <a href="countries.html">Countries</a>
+      <a href="results.html">Results</a>
+      <a href="problems.html">Problems</a>
       <a href="links.html">Links and Resources</a>
     </div>
   </div>
