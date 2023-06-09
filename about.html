@@ -67,26 +67,27 @@
       color: #4B86DB;
     }
     footer {
-      background-image: url('https://lwheel.github.io/MathOlympiad/cairo.svg');
+      background-image: url('https://lwheel.github.io/MathOlympiad/repeat1.png');
       background-size: contain;
       background-repeat: repeat;
-      background-color: black;
       color: rgb(0, 0, 0);
       text-align: left;
-      padding: 0.2em;
-    font-size: 14px;
-      margin: 10px;
-      padding: 4px;
-      line-height: 2em;
-      position: fixed;
+      font-size: 12px; /* Decreased font size */
+      line-height: 1em;
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 4em;
+      padding: 0.2em 2em; /* Decreased padding */
+      box-sizing: border-box;
       margin: 0;
-      z-index: 5;
+      position: relative; /* Change position to relative */
+        z-index: 1; /* Increase z-index */
+        margin-top: 2rem; 
       text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
-    }
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  }
     footer::before {
       content: "";
       position: absolute;
@@ -174,7 +175,7 @@
 <h2 style="text-align:left; margin-left: 30px;">About EAMO</h2>
 
 <dl class="normal">
-    <dt style="text-align:left; margin-left: 40px;"><a>East African Mathematical Olympiad</a></dt>
+    <dt style="text-align:left; margin-left: 40px;"><h2>East African Mathematical Olympiad</h2></dt>
     <dd>
         <p>
             The East African Mathematical Olympiad is an annual high school mathematics contest targeting the countries of Eastern Africa. The East African mathematical community came to an understanding that a regional competition would be of crucial value in enhancing appreciation of mathematics as well as a great tool for preparing students for the international Mathematical Olympiad, and finally enabling young contestants to meet and share their passion for the subject.
@@ -185,7 +186,7 @@
     </dd>
 
 
-    <dt style="text-align:left; margin-left: 40px;"><a>The Goals</a></dt>
+    <dt style="text-align:left; margin-left: 40px;"><h2>The Goals</h2></dt>
     <dd>
         <p>
            &bull; Popularize Mathematics: Making mathematics more widespread and appreciated in society.
@@ -207,7 +208,7 @@
     </dd>
 
 
-<dt style="text-align:left; margin-left: 40px;"><a>EAMO Board</a></dt>
+<dt style="text-align:left; margin-left: 40px;"><h2>EAMO Board</h2></dt>
 <dd>
     <table><thead><tr><th><a>Name</a></th><th class="highlightUp"><a>Country</a></th>
         <tr class="imp"><td align="center"><a>Dr. James Katende</a></td><td><a>Kenya</a></td>
@@ -222,7 +223,7 @@
     </tbody></table>
 </dd>
 <br>
-<dt style="text-align:left; margin-left: 40px;"><a>Adjoint Members</a></dt>
+<dt style="text-align:left; margin-left: 40px;"><h2>Adjoint Members</h2></dt>
 <dd>
     <table><thead><tr><th><a>Name</a></th><th class="highlightUp"><a>Organization</a></th>
     <tr class="imp"><td align="center"><a>Dr. Diletta Martinelli</a></td><td><a>University of Amsterdam</a></td>
